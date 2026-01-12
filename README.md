@@ -1,17 +1,31 @@
 # GrepColl
 
-![PyPI version](https://img.shields.io/pypi/v/grepcoll.svg)
-[![Documentation Status](https://readthedocs.org/projects/grepcoll/badge/?version=latest)](https://grepcoll.readthedocs.io/en/latest/?version=latest)
-
 GrepColl: grep, but with recoll underneath, usefull to search with stemming and lemmatization
 
-* PyPI package: https://pypi.org/project/grepcoll/
-* Free software: MIT License
-* Documentation: https://grepcoll.readthedocs.io.
+## Installation
 
-## Features
+Recoll and python bindings must be installed in the system.
 
-* TODO
+```bash
+sudo apt-get install recoll python3-recoll # Ubuntu
+sudo pacman -S recoll                      # Arch
+```
+
+After that, you need to clone this repository and install all the dependencies.
+
+```bash
+git clone git@github.com:WoWaster/grepcoll.git
+cd grepcoll
+uv sync
+```
+
+## Usage
+
+```bash
+uv run grepcoll <pattern> <path/to/dir>
+```
+
+By default `<path>` is the root of the project.
 
 ## Credits
 
