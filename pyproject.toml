@@ -48,3 +48,6 @@ select = [
 
 [tool.uv]
 package = true
+
+[tool.uv.pip]
+system = true
